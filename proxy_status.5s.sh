@@ -1,7 +1,7 @@
 #!/bin/bash
 
 interface="Wi-Fi"
-proxy_type="Burp Proxy"
+proxy_type="Burp"
 proxy_get_http="-getwebproxy"
 proxy_get_https="-getsecurewebproxy"
 proxy_set_http="-setsecurewebproxystate"
