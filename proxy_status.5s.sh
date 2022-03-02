@@ -13,8 +13,8 @@ state=$(networksetup $proxy_get_http $interface | grep "No")
 
 if [ "$1" = 'toggle' ]; then
   if [ -n "$state" ]; then
-    networksetup $proxy_conf_http $interface localhost 12345
-    networksetup $proxy_conf_https $interface localhost 12345
+    networksetup $proxy_conf_http $interface localhost 8080
+    networksetup $proxy_conf_https $interface localhost 8080
     networksetup $proxy_set_http $interface on
     networksetup $proxy_set_https $interface on
   else
